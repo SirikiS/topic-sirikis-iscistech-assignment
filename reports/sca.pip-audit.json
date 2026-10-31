@@ -1,0 +1,12 @@
+{
+  "tool": "pip-audit",
+  "scan_type": "sca",
+  "vulnerabilities": [
+    {
+      "package": "cryptography",
+      "version": "38.0.1",
+      "vuln": "CVE-2023-XXXX",
+      "severity": "MEDIUM"
+    }
+  ]
+}

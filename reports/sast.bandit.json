@@ -1,0 +1,20 @@
+{
+  "tool": "bandit",
+  "scan_type": "sast",
+  "metrics": {
+    "total_issues": 3,
+    "severity": {
+      "HIGH": 1,
+      "MEDIUM": 2
+    }
+  },
+  "results": [
+    {
+      "test_id": "B105",
+      "issue_severity": "HIGH",
+      "issue_confidence": "MEDIUM",
+      "location": "app/config.py",
+      "issue_text": "Hardcoded password-like strings in configuration"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "tool": "checkov",
+  "scan_type": "iac",
+  "check_result": {
+    "passed_checks": 6,
+    "failed_checks": 2,
+    "summary": {
+      "FAILED": 2,
+      "PASSED": 6,
+      "SKIPPED": 0
+    }
+  }
+}

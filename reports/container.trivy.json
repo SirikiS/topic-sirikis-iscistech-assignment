@@ -1,0 +1,23 @@
+{
+  "tool": "trivy",
+  "scan_type": "container",
+  "Summary": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 2,
+    "LOW": 0
+  },
+  "Results": [
+    {
+      "Target": "python:3.11.9-slim",
+      "Class": "os-pkgs",
+      "Vulnerabilities": [
+        {
+          "Severity": "HIGH",
+          "PkgName": "openssl",
+          "InstalledVersion": "1.1.1"
+        }
+      ]
+    }
+  ]
+}
