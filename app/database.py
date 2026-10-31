@@ -1,11 +1,12 @@
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import declarative_base
 
 from config import DATABASE_URL
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False}, pool_pre_ping=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = engine.begin().connection.engine.dialect.name is not None and __import__("sqlalchemy.orm").orm.declarative_base()
+Base = declarative_base()
 
 
 def get_db():
